@@ -9,6 +9,13 @@
 	<body>
 		<div class="container">
 			<h1>Welcome, your password gave you access to the secret page!</h1> 
+			<p>Please stay and view this secret page as long as you like, afterwards, you can logout to keep the secret safe.</p>
+			<form action="/logout">
+				<input class="btn btn-danger" type="submit" value="Logout">
+				{% for message in get_flashed_messages() %}
+					{{ message }}
+				{% endfor %}
+			</form>
 		</div>
 	</body>
 </html>
