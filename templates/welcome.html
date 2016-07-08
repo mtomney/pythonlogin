@@ -17,5 +17,11 @@
 				{% endfor %}
 			</form>
 		</div>
+		<h3>Posts:</h3>
+		{% for posts in posts %}
+		Title: {{ posts.title }} <br>
+		Post: {{ posts.description }}<br>
+		<br>
+		{% endfor %}
 	</body>
 </html>
